@@ -6,7 +6,7 @@
     <title>The basic Language of the Web: HTML</title>
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <h1>📘 The Code Magazine</h1>
       <nav>
         <a href="blog.html">Blog</a>
@@ -16,7 +16,7 @@
       </nav>
     </header>
     <article>
-      <header>
+      <header class="post-header">
         <h2>The basic Language of the Web: HTML</h2>
         <img
           src="img/laura-jones.jpg"
@@ -24,12 +24,15 @@
           height="50px"
           width="50px"
         />
-        <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+        <p id="author">
+          Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+        </p>
         <img
           src="img/post-img.jpg"
           alt="A HTML code page"
           height="200px"
           width="500px"
+          class="post-img"
         />
       </header>
       <p>
@@ -87,7 +90,7 @@
     </article>
     <aside>
       <h4>Related posts</h4>
-      <ul>
+      <ul class="related">
         <li>
           <img
             src="img/related-1.jpg"
@@ -96,9 +99,8 @@
             width="75px"
           />
           <a href="#">How to Learn Web Development</a>
-          <p>By Jonas Schedmann</p>
+          <p class="related-author">By Jonas Schedmann</p>
         </li>
-
         <li>
           <img
             src="img/related-2.jpg"
@@ -107,7 +109,7 @@
             width="75px"
           />
           <a href="#">The Unknown Powers of CSS</a>
-          <p>By Jim Dilken</p>
+          <p class="related-author">By Jim Dilken</p>
         </li>
         <li>
           <img
@@ -117,10 +119,10 @@
             height="75"
           />
           <a href="#">Why JavaScript is Awesome</a>
-          <p>By Matilda</p>
+          <p class="related-author">By Matilda</p>
         </li>
       </ul>
     </aside>
-    <footer><p>Copyright &copy; by the Code Magazine</p></footer>
+    <footer><p id="footer">Copyright &copy; by the Code Magazine</p></footer>
   </body>
 </html>
